@@ -1,0 +1,38 @@
+[
+    {
+        "uid": "sh2Rice" ,
+        "shopName":"sh2",
+        "item":"Rice",
+        "qty":"200",
+        "price":"75"
+    },
+    {
+        "uid": "sh2Lentil" ,
+        "shopName":"sh2",
+        "item":"Lentil",
+        "qty":"110",
+        "price":"42"
+    }, 
+    {
+        "uid": "sh2Salt" ,
+        "shopName":"sh2",
+        "item":"Salt",
+        "qty":"35",
+        "price":"21"
+    }, 
+    {
+        "uid": "sh2Curd" ,
+        "shopName":"sh2",
+        "item":"Curd",
+        "qty":"50",
+        "price":"28"
+    }, 
+    {
+        "uid": "sh2Butter" ,
+        "shopName":"sh2",
+        "item":"Butter",
+        "qty":"21",
+        "price":"60"
+    }
+]
+

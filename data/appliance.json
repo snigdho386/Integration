@@ -1,0 +1,14 @@
+[
+    { 
+        "item": "Rice", 
+        "qty": "5"
+    },
+    {
+        "item": "Butter", 
+        "qty":"1"
+    },
+    {
+        "item":"Curd", 
+        "qty":"2"
+    }
+]
