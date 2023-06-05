@@ -1,9 +1,9 @@
-var fs = require('fs');
+let fs = require('fs');
 const express=require("express");  
 const router=express.Router();
 const Inventory=require("../models/Inventory"); 
-var process = require("process");
-var moveFrom = "./data/shops";
+let process = require("process");
+let moveFrom = "./data/shops";
 
 router.post("/createinventory",async (req,res)=>{
 try{

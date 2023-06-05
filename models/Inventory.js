@@ -21,6 +21,7 @@ const InventorySchema=new Schema({
     price:{
         type: String, 
         required: true
-    }
+    },
+    
 })
 module.exports=Mongoose.model('inventories',InventorySchema);

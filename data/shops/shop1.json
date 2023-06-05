@@ -3,36 +3,26 @@
         "uid": "sh1Rice" ,
         "shopName":"sh1",
         "item":"Rice",
-        "qty":"100",
-        "price":"80"
+        "qty":"100 kg",
+        "price":"Rs 80 / Kg"
+       
+        
     },
     {
         "uid": "sh1Lentil" ,
         "shopName":"sh1",
         "item":"Lentil",
-        "qty":"100",
-        "price":"44"
-    }, 
-    {
-        "uid": "sh1Salt" ,
-        "shopName":"sh1",
-        "item":"Salt",
-        "qty":"25",
-        "price":"20"
-    }, 
-    {
-        "uid": "sh1Curd" ,
-        "shopName":"sh1",
-        "item":"Curd",
-        "qty":"10",
-        "price":"26"
+        "qty":"100 Kg",
+        "price":"Rs 70 / Kg"
+        
     }, 
     {
         "uid": "sh1Butter" ,
         "shopName":"sh1",
         "item":"Butter",
-        "qty":"25",
-        "price":"52"
+        "qty":"25 Kg",
+        "price":"Rs 520 / kg"
+        
     }
 ]
 
