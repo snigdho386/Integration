@@ -11,11 +11,11 @@ router.get("/getinventory",async (req,res)=>{
             else 
             {  
                 console.log("-------------------------------INVENTORY-----------------------------------")
+                res.json(data)
                 console.log(data)
                 console.log("-----------------------------------------------------------------------------")
             }
         })
-        res.json({success:true})
     }catch(error){
         console.log(error)
         res.json({success:false})

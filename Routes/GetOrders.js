@@ -1,12 +1,11 @@
 const mongoose=require("mongoose")
 const express=require("express");  
-const Inventory = require("../models/Orders");
 const router=express.Router();
 
-router.get("/getorders",async (req,res)=>{
+router.get("/getorders", async (req,res)=>{
     try{   
         const fetched_data = await mongoose.connection.db.collection("orders"); 
-        await fetched_data.find({}).toArray(async function(err,data){
+        await fetched_data.find({"shopName":"sh1"}).toArray(async function(err,data){
             if(err) 
              console.log(err) 
             else 
