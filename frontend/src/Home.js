@@ -9,13 +9,15 @@ export default function () {
         color:"#000"
 
     }
-   
+
   return (
     <div >
         <Navbar/>
-        <button style ={myStyle}><a href="/Items"><h5>Go to Inventory</h5></a></button> 
-        <button style={myStyle}><a href="/Orders"><h5>Go To Your Orders</h5></a></button>
-        <button style={myStyle}><a href="/Cart"><h5>Go To Your Cart</h5></a></button>
+        <button style ={myStyle}><a href="/shop/Items"><h5>Go to Inventory</h5></a></button>
+        <button style={myStyle}><a href="/shop/Orders"><h5>Go To Your Orders</h5></a></button>
+        <button style={myStyle}><a href="/shop/Cart"><h5>Go To Your Cart</h5></a></button>
+
+        <h2 style={{color:"yellow"}}>Available Shops</h2>
     </div>
   )
 }

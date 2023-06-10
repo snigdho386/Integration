@@ -7,9 +7,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'NHaasGroteskDSPro-65Md' !important;
-  background-image: url("texture-seamless-wood-5.jpg");
+  /* background-image: url("texture-seamless-wood-5.jpg"); */
+  background: #ffffff;
   opacity:1
- 
+
 }
 
 code {
@@ -24,5 +25,5 @@ a{
   padding-left: 40px;
 }
 
- 
+
 

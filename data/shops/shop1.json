@@ -9,9 +9,9 @@
         
     },
     {
-        "uid": "sh1Lentil" ,
+        "uid": "sh1RedLentil" ,
         "shopName":"sh1",
-        "item":"Lentil",
+        "item":"Red Lentil",
         "qty":"100 Kg",
         "price":"Rs 70 / Kg"
         
@@ -23,6 +23,59 @@
         "qty":"25 Kg",
         "price":"Rs 520 / kg"
         
+    },
+   
+    {
+        "uid": "sh1YellowLentil" ,
+        "shopName":"sh1",
+        "item":"Yellow Lentil",
+        "qty":"250 Kg",
+        "price":"Rs 80 / kg"
+        
+    },
+    {
+        "uid": "sh1Salt" ,
+        "shopName":"sh1",
+        "item":"Salt",
+        "qty":"25 Kg",
+        "price":"Rs 10 / kg"
+        
+    },
+    
+    {
+        "uid": "sh1ChilliPowder" ,
+        "shopName":"sh1",
+        "item":"Chilli Powder",
+        "qty":"30 kg",
+        "price":"Rs 135 / kg"
+        
+    },
+   
+    {
+        "uid": "sh1MusterdOil" ,
+        "shopName":"sh1",
+        "item":"Mustard Oil",
+        "qty":"20 Kg",
+        "price":"Rs 134 / kg"
+        
+    },
+    {
+        "uid": "sh1Flour" ,
+        "shopName":"sh1",
+        "item":"Flour",
+        "qty":"35 Kg",
+        "price":"Rs 50 / kg"
+        
+    },
+
+{
+        "uid": "sh1Curd" ,
+        "shopName":"sh1",
+        "item":"Curd",
+        "qty":"70 Kg",
+        "price":"Rs 90 / kg"
+        
     }
+
 ]
 

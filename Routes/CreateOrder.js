@@ -1,32 +1,45 @@
-const express=require("express");  
-const router=express.Router();
-const orders=require("../models/Orders"); 
+const express = require("express");
+const router = express.Router();
 
-//Ord is supposed to come from front-end
-const Ord=require("../orders.json")
+const Order = require("../models/Orders");
+const Inventory = require("../models/Inventory");
+const KitchenInventory = require("../models/KitchenInventory");
 
-// const obj=JSON.parse(aks)
+router.post("/createorder", async (req, res) => {
+    try {
+        const orders = req.body;
 
+        for (const order of orders) {
+            const { uid, shopName, item, quty, price } = order;
 
-router.post("/createorder",async (req,res)=>{
-    try{
+            // Rename quty to qty
+            const qty = quty;
 
-        Ord.forEach(obj => { 
-            orders.create({
-            uid: obj.uid,
-            shopName:obj.shopName,
-            item:obj.item,
-            qty:obj.qty,
-            price: (obj.price*obj.qty)
-        })
-            
-        });
-       
-        res.json({success:true})
-    }catch(error){
-        console.log(error)
-        res.json({success:false})
+            // Create a new order entry ------------------
+            await Order.create({ uid, shopName, item, qty, price });
+
+            // Update kitchen inventory ------------------
+            const existingInventory = await KitchenInventory.findOne({ item });
+
+            if (existingInventory) {
+                existingInventory.qty += parseInt(qty);
+                await existingInventory.save();
+            } else {
+                await KitchenInventory.create({ item, qty: parseInt(qty) });
+            }
+
+            // Update shop inventory ----------------
+            const inventory = await KitchenInventory.findOne({ item });
+
+            inventory.qty -= parseInt(qty);
+            await inventory.save();
+        }
+
+        res.json({ success: true });
+    } catch (error) {
+        console.log(error);
+        res.json({ success: false });
     }
-})
+});
 
-module.exports=router
+module.exports = router;

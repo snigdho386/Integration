@@ -6,26 +6,24 @@ import FetchData from './FetchData';
 import Orders from './Orders';
 import Cart from './Cart';
 import { CartProvider } from './ContextReducer.js';
+import UserHome from './UserHome';
 
 const router = createBrowserRouter([
-  {path:'/',element:<Home/>},
-  {path:'/Items',element:<FetchData/>},
-  {path:'/Orders',element:<Orders/>},
-  {path:'/Cart',element:<Cart/>},
+    { path: '/', element: <UserHome /> },
+    { path: '/shop', element: <Home /> },
+    { path: '/shop/Items', element: <FetchData /> },
+    { path: '/shop/Orders', element: <Orders /> },
+    { path: '/shop/Cart', element: <Cart /> },
 ])
 function App() {
- 
-  return (
-    <CartProvider>
-    <div className="App">
-      <RouterProvider router={router}/>
-      
-     
-      
-      
-    </div>
-    </CartProvider>
-  );
+
+    return (
+        <CartProvider>
+            <div className="App">
+                <RouterProvider router={router} />
+            </div>
+        </CartProvider>
+    );
 }
 
 export default App;
